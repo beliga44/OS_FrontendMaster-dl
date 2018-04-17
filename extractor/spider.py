@@ -88,7 +88,7 @@ class Spider(object):
         sections = []
 
         soup_page = BeautifulSoup(self.browser.page_source, 'html.parser')
-        titles = soup_page.find('section', {'class': 'CourseToc'}).find_all('h3', {'class', 'lessongroup'})
+        titles = soup_page.find('section', {'class': 'CourseToc'}).find_all('h2', {'class', 'lessongroup'})
 
         for index, item in enumerate(sections_items, start=0):
             # Course section data structure
