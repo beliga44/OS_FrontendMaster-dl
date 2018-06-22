@@ -177,6 +177,8 @@ class Spider(object):
                         time.sleep(10)
 
                     if high_resolution:
+                        big_play_button = self.browser.find_element_by_class_name('vjs-big-play-button')
+                        big_play_button.click()
                         resolution_button = self.browser.find_element_by_class_name("fm-vjs-quality")
                         resolution_button.click()
 
