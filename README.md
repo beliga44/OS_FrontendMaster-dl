@@ -1,5 +1,9 @@
 # Front-end Masters Video Downloader
 
+**WARNING**
+
+> You will likely lose access to their accounts if they use the program. Use of the program againsts Front-end Master APIs is against the Terms of Service and subscribers are permanently losing their accounts when they point the program at the web player APIs.
+
 This command-line tool requires a Front-end Masters subscription. Go to [Enroll Page](https://frontendmasters.com/enroll/) to subscribe (39USD/month).
 
 > Front-end Masters is expert front-end training fro you to master building quality web interfaces.
