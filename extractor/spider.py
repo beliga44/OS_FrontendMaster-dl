@@ -27,11 +27,13 @@ class Spider(object):
         options.add_argument("--headless")
         options.add_argument("--disable-gpu")
         options.add_argument("--window-size=1920x1080")
+	options.add_argument('--disable-dev-shm-usage')
+	options.add_argument('--no-sandbox')
 
         if mute_audio:
             options.add_argument("--mute-audio")
 
-        self.browser = webdriver.Chrome(chrome_options=options)
+        self.browser = webdriver.Chrome("/usr/bin/chromedriver", chrome_options=options)
 
     def login(self, id, password):
         self.browser.get(URL_LOG_IN)
